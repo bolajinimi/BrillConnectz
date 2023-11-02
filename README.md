@@ -1,2 +1,0 @@
-# BrillConnectz
-Authenication
