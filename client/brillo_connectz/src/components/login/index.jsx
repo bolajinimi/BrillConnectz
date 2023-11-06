@@ -36,8 +36,8 @@ const Login = () => {
 					<form className={styles.form_container} onSubmit={handleSubmit}>
 						<h1>Login to Your Account</h1>
 						<input
-							type="email"
-							placeholder="Email"
+							type="text"
+							placeholder="Email or Phone Number"
 							name="email"
 							onChange={handleChange}
 							value={data.email}
@@ -66,6 +66,7 @@ const Login = () => {
 							Sign Up
 						</button>
 					</Link>
+					<Link className={styles.forgot} to='/forgot-password'>Forgot Password?</Link>
 				</div>
 			</div>
 		</div>
