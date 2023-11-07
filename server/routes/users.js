@@ -6,7 +6,7 @@ const router = require("express").Router();
 
 router.post("/reset-password",auth,resetPassword);
 router.post("/update-user",auth,updateUser);
-router.post("/new-password",newPassword);
+router.post("/new-password",auth,newPassword);
 router.post("/forgot-password",forgotPassword);
 
 

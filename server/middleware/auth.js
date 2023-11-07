@@ -16,6 +16,7 @@ const auth =async(req,res,next)=>{
 
     const user = await User.findById({_id:id})
     if(!user) return res.status(404).json({Error:"User not found"})
+
     req.user = verified
     next()
     } catch (error) {

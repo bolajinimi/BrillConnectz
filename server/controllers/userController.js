@@ -1,6 +1,8 @@
 const bcrypt = require("bcrypt");
 const { User } = require("../models/User");
 const { generateToken, verifyToken, generateOtp } = require("../utils/utils");
+const { sendOtp } = require("../utils/sendSms");
+const sendEmail = require("../utils/sendEmail");
 
 const resetPassword = async (req, res) => {
 	try {
